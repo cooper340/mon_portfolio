@@ -27,7 +27,7 @@ header{
 
 
 .slider{
-    padding-right: 10px;    /* comme ca les liens ne sont pas coller a droite */
+    padding-right: 30px;    /* comme ca les liens ne sont pas coller a droite */
     background-color: rgba(0 , 0 , 0 , 0.5 );
     display: flex;    /* ca doit etre en flex car je vais diviser la partie en deux  la nav et le texte h2*/
     justify-content: space-between; /* pour que les deux txtes soient aux extrémité ( autrement jaurais mis center ou space-around  */
@@ -96,14 +96,14 @@ header{
     font-weight: bolder; /* très épais */
     text-align: center; /* centré */
     color: rgb(251, 251, 251);
-    font-size: 2.5em;
+    font-size: 2vw;
 }
 
 
 
 .titre p{
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2vw;
     color: rgb(255, 255, 255);
 }
 
@@ -121,8 +121,8 @@ header{
 
 
 .bloc1 {
-    padding: 30px;
-    padding: 20px;   /* pour eviter que le texte ne soit trop coller a au autre compartiment  */
+   
+    padding: 2vw;   /* pour eviter que le texte ne soit trop coller a au autre compartiment  */
     align-items: start;
     display: flex;
     height: 20vh;
@@ -130,10 +130,10 @@ header{
 }
 .services{
     font-style: italic;
-    font-size: 2em;
+    font-size: 2vw;
     flex: 1;
     font-weight: bolder;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif ;
+    font-family:"Pacifico" ;
     
 
 }
@@ -141,10 +141,9 @@ header{
 
 
 .moi{
-
     font-weight: bold;
     border-radius: 15px;
-    font-size: large;
+    font-size: 1.2vw;
     font-family: cursive;
     flex: 2;
     transition: 0.4s;
@@ -166,20 +165,20 @@ box-shadow: 0 0 18px rgba(142, 45, 226, 0.8);
 
 
 .dark{     /*bloc pricipale */
-height: 50vh;
-display: flex;
-flex-direction: column;        /* pour que le bloc parent sois diviser en deux enfant dans la direction que je veux */
+display: flex;       /* pour que le bloc parent sois diviser en deux enfant dans la direction que je veux */
 
 }
 
 
-.competences{     /*premier enfant */
-text-align: center;
+.competences{  /*premier enfant */
 flex: 1;
-font-family: cursive;
+padding: 2vw;
+display: flex;
+align-items: center;
+font-family: "Pacifico";
 font-weight: bolder;
 font-style: oblique;
-font-size: 2em;
+font-size: 2vw;
 color: #F0F0F0;
 
 
@@ -188,12 +187,11 @@ color: #F0F0F0;
 
 .tableau{     /*deuxieme enfant , qui est lui meme un parent , cest le parent des 4 enfants ( cc , c, java, python ) */
 gap: 50px ;
-flex: 2;
-display: flex;
-padding: 20px;
-justify-content: center;
-align-items: center;
 
+display: flex;
+padding: 2vw;
+flex: 3;
+align-items: center;
 
 
 
@@ -208,7 +206,6 @@ background-color: rgba(106, 99, 99, 0.5);
 }
 
 .c{
-
 flex: 1;
 border-radius: 30px;
 background-color: rgba(106, 99, 99, 0.5);
@@ -273,8 +270,8 @@ transform: scale(1.1);
 
 .projets{
 text-align: center;
-margin-top:  30px;
-font-family: cursive;
+margin-top:  3vw;
+font-family: "Pacifico";
 font-weight: bolder;
 font-style: oblique;
 font-size: 2em;
@@ -291,10 +288,10 @@ color: #F0F0F0;
 
 
 
-
+  
 .grille{            /*ca c le bloc principale */
 justify-content: center;
-padding: 10px;
+padding: 2vw;
 height: 50vh;
 display: grid;
 grid-template-columns:  300px 300px 300px 300px ;
@@ -306,20 +303,20 @@ gap: 30px;
 
 
 
-.grille div {       /*ca c  pour centrer le text au bloc  */  
+.grille div {     /*ca c  pour centrer le text au bloc  */  
 text-align: center;
 color: #F0F0F0;
 
 }
 
 .description{  /*ca c pour que le bloc prenne deux cases */
+
 grid-column: 1;
 grid-row: 1 /span 2;
 
 }
 
 .reseaux{   /*ca c pour que le bloc prenne deux cases */
-
 grid-column: 4;
 grid-row: 1 / span 2;
 
@@ -400,10 +397,10 @@ transform: translateY(-5px);
 
 
 
-.fin{               /*le dernier titre de ma page */
-padding-top: 30px;
+.fin{              /*le dernier titre de ma page */
+padding-top: 2vw;
 text-align: center;
-font-family: cursive;
+font-family: "Pacifico";
 font-weight: bolder;
 font-style: oblique;
 font-size: 2em;
@@ -415,7 +412,7 @@ color: #F0F0F0;
 
 
 .partie1{   /* le bloc du formulaire */
-width: 100vh;
+width: 60vw;
 background-color: #212021; 
 height: 50vh;
 color:  #eeeeee;
