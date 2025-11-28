@@ -1,0 +1,533 @@
+html{
+background-color: #171717 ;
+scroll-behavior: smooth;
+}
+
+
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+header{
+   
+    background-image: url(../image/arbre.jpeg);
+    height: 70vh;
+    background-color: black;
+    background-position: center ;  /* sinon on ne voit pas la tete du mr donc */
+    background-size:cover;
+    
+    
+}
+
+
+
+.slider{
+    padding-right: 10px;    /* comme ca les liens ne sont pas coller a droite */
+    background-color: rgba(0 , 0 , 0 , 0.5 );
+    display: flex;    /* ca doit etre en flex car je vais diviser la partie en deux  la nav et le texte h2*/
+    justify-content: space-between; /* pour que les deux txtes soient aux extrémité ( autrement jaurais mis center ou space-around  */
+    align-items: center;
+    height: 10vh; /* la taille de la barre de nav  */
+}
+
+
+
+.slider ul {
+    display: flex; /* pour que je puisse aligné les liens a l'horizental et les centré ect ect ...*/
+    gap: 20px;   /* pour les separé de vignt pixels  */
+    list-style: none;
+
+}
+
+
+
+
+.slider a{
+    display: inline-block;  /*  pour faire l'effet zoom*/
+    font-weight: bold;
+    font-size: 1.5em; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.4s;   /* pour que l'effet ne soit pas agresive  */
+}
+
+
+.slider a:hover{
+    transform: scale(1.1); /* l'effet zoom justement  */
+    color: rgb(159, 71, 3);
+}
+
+
+.text h2{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    font: italic normal bold 3em/1.2 Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+.titre{
+    flex-direction: column;
+    display: flex;           /*pour gerer les texte en bas comme je le shouaite */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  
+
+
+}
+
+
+
+.titre h1{
+
+
+
+    text-transform: uppercase;     /*ca mets le texte en majuscule */
+    font-family: 'Pacifico';
+    font-weight: bolder; /* très épais */
+    text-align: center; /* centré */
+    color: rgb(251, 251, 251);
+    font-size: 2.5em;
+}
+
+
+
+.titre p{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloc1 {
+    padding: 30px;
+    padding: 20px;   /* pour eviter que le texte ne soit trop coller a au autre compartiment  */
+    align-items: start;
+    display: flex;
+    height: 20vh;
+    color: #F0F0F0;
+}
+.services{
+    font-style: italic;
+    font-size: 2em;
+    flex: 1;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif ;
+    
+
+}
+
+
+
+.moi{
+
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: large;
+    font-family: cursive;
+    flex: 2;
+    transition: 0.4s;
+    color: #cfcccc;
+    
+}
+
+
+
+.moi:hover{
+transform: translateY(-5px);
+box-shadow: 0 0 18px rgba(142, 45, 226, 0.8);
+}
+
+
+
+
+
+
+
+.dark{     /*bloc pricipale */
+height: 50vh;
+display: flex;
+flex-direction: column;        /* pour que le bloc parent sois diviser en deux enfant dans la direction que je veux */
+
+}
+
+
+.competences{     /*premier enfant */
+text-align: center;
+flex: 1;
+font-family: cursive;
+font-weight: bolder;
+font-style: oblique;
+font-size: 2em;
+color: #F0F0F0;
+
+
+}
+
+
+.tableau{     /*deuxieme enfant , qui est lui meme un parent , cest le parent des 4 enfants ( cc , c, java, python ) */
+gap: 50px ;
+flex: 2;
+display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+.cc{ 
+
+border-radius: 30px;
+flex: 1;
+background-color: rgba(106, 99, 99, 0.5);
+
+
+}
+
+.c{
+
+flex: 1;
+border-radius: 30px;
+background-color: rgba(106, 99, 99, 0.5);
+
+
+}
+
+.python{
+flex: 1;
+border-radius: 30px;
+background-color: rgba(106, 99, 99, 0.5);
+
+
+
+
+
+}
+
+.java{
+flex: 1;
+border-radius: 30px;
+background-color: rgba(106, 99, 99, 0.5);
+
+
+
+
+
+}
+.tableau img {      /*c pour centrer les images */
+width: 100%;
+height: 100%;
+object-fit: contain;
+
+
+
+
+}
+
+.tableau h3 {
+color: #F0F0F0;
+text-align: center;
+
+
+
+}
+.tableau div{      /*pour les effets */
+display: inline-block;
+transition: 0.4s;
+
+
+
+}
+
+
+.tableau div:hover{      /*pour les effets */
+
+transform: scale(1.1);
+
+
+}
+
+
+.projets{
+text-align: center;
+margin-top:  30px;
+font-family: cursive;
+font-weight: bolder;
+font-style: oblique;
+font-size: 2em;
+color: #F0F0F0;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.grille{            /*ca c le bloc principale */
+justify-content: center;
+padding: 10px;
+height: 50vh;
+display: grid;
+grid-template-columns:  300px 300px 300px 300px ;
+grid-template-rows: 200px 200px ;
+gap: 30px;
+
+}
+
+
+
+
+.grille div {       /*ca c  pour centrer le text au bloc  */  
+text-align: center;
+color: #F0F0F0;
+
+}
+
+.description{  /*ca c pour que le bloc prenne deux cases */
+grid-column: 1;
+grid-row: 1 /span 2;
+
+}
+
+.reseaux{   /*ca c pour que le bloc prenne deux cases */
+
+grid-column: 4;
+grid-row: 1 / span 2;
+
+}
+
+.grille  div img { /*reglages des images */
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 15px;
+filter: brightness(40%);
+transition: 0.4s;
+
+}
+
+
+
+
+.grille img:hover {
+filter: brightness(100%);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+#D {       /* ca c pour le style  jai pas voulu le mettre dans leur classe respective pour des questiions dorganisation */
+transition: 0.4s;
+font-style: serif ;
+font-weight: bolder;
+font-family: cursive;
+border-radius: 15px;
+text-align: start;
+font-size: 1.1em;
+color: #cfcccc;
+
+
+
+}
+
+#D:hover{
+box-shadow: 0 0 18px rgba(142, 45, 226, 0.8);
+transform: translateY(-5px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.contacte{       /*bloc principale de mon formulaire */
+
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+
+
+
+
+
+
+.fin{               /*le dernier titre de ma page */
+padding-top: 30px;
+text-align: center;
+font-family: cursive;
+font-weight: bolder;
+font-style: oblique;
+font-size: 2em;
+color: #F0F0F0;
+
+
+}
+
+
+
+.partie1{   /* le bloc du formulaire */
+width: 100vh;
+background-color: #212021; 
+height: 50vh;
+color:  #eeeeee;
+padding:5px;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+transition: 0.4s;
+
+
+}
+.partie1:hover{
+box-shadow: 0 0 18px rgba(142, 45, 226, 0.8);
+transform: translateY(-5px);
+
+}
+
+
+
+input, textarea ,select {
+    color: #dedede;
+    background-color: #2f2f2f;  
+    padding:5px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button{
+
+border-radius: 10px;
+padding:2px;
+margin: 2px;
+width: 200px;
+
+}
+
+textarea{
+
+max-width: 900px;
+}
+
+
+
+
+
+footer{
+color: #bcbcbcf2;
+ background-color: rgba(0 , 0 , 0 , 0.5 );
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.box{
+padding: 15px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+}
+
+
+.cordonnes{  
+display: flex;
+flex-direction: column;
+gap: 2px;
+
+}
+
+
+.box a {
+color: #f2f2f2;
+text-decoration: none;
+
+
+
+}
+
+
+
+.box2{
+text-align: center;
+padding: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
